@@ -5,21 +5,21 @@
 class He < Formula
   desc "HealthExport CLI - read and decrypt your health data"
   homepage "https://github.com/TParizek/healthexport_cli"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TParizek/healthexport_cli/releases/download/v1.0.0/he_1.0.0_darwin_amd64.tar.gz"
-      sha256 "9bac122f01d4c6abd83c352574366ddc59291af0ef549590b9f4161db9b0b2de"
+      url "https://github.com/TParizek/healthexport_cli/releases/download/v1.1.0/he_1.1.0_darwin_amd64.tar.gz"
+      sha256 "8a615450329f4de0e5815de19c300294c8980c414cfaf8d10bf497ddcd7545b2"
 
       define_method(:install) do
         bin.install "he"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TParizek/healthexport_cli/releases/download/v1.0.0/he_1.0.0_darwin_arm64.tar.gz"
-      sha256 "4411c0e9b1a3104d5eed03fd98c538542246de1ca3b2821bd7b997355ff33633"
+      url "https://github.com/TParizek/healthexport_cli/releases/download/v1.1.0/he_1.1.0_darwin_arm64.tar.gz"
+      sha256 "588f8f2c1b8c5d3a6e27af569f19aaedb8f2ca52de908b6c3b66f1618121f46c"
 
       define_method(:install) do
         bin.install "he"
@@ -29,15 +29,15 @@ class He < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TParizek/healthexport_cli/releases/download/v1.0.0/he_1.0.0_linux_amd64.tar.gz"
-      sha256 "8781adbb636369c0fcb8933ab5c6161101be4501718597f72d0c0e2ee7c9e173"
+      url "https://github.com/TParizek/healthexport_cli/releases/download/v1.1.0/he_1.1.0_linux_amd64.tar.gz"
+      sha256 "54ef18c4a4df1206acc8bd9ce443b6ec34bdf2426f257039fade2cf077badfe6"
       define_method(:install) do
         bin.install "he"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TParizek/healthexport_cli/releases/download/v1.0.0/he_1.0.0_linux_arm64.tar.gz"
-      sha256 "a220c00c6d7e5b3ab5f3013d933624fd7950eeea9a267b98f9c97058c1c99ea2"
+      url "https://github.com/TParizek/healthexport_cli/releases/download/v1.1.0/he_1.1.0_linux_arm64.tar.gz"
+      sha256 "f8a4e525173b5aa1f20ed306be9b3bb4172acfe012ef9769a5807bfd9f0d19f7"
       define_method(:install) do
         bin.install "he"
       end
